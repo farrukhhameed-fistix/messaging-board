@@ -1,0 +1,2 @@
+<app-message-list [messages]="this.messagingService.messages"></app-message-list>
+<app-compose-message (onMessageEntered)="onNewMessageEntered($event)"></app-compose-message>

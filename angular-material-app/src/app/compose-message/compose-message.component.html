@@ -1,0 +1,8 @@
+<div class="grid-container">
+    <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Type your message</mat-label>
+        <input matInput placeholder="Type youe message" (keyup.enter)="onEnter()" [(ngModel)]="messageContent">
+        <mat-icon matSuffix>send</mat-icon>
+        <mat-hint>Press enter to send message</mat-hint>
+    </mat-form-field>
+</div>

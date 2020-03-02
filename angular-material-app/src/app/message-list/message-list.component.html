@@ -1,0 +1,15 @@
+<div class="grid-container">
+    <h1 class="mat-h1">Messages</h1>
+    <mat-card class="card" *ngFor="let message of messages">
+        <mat-card-header>
+            <div mat-card-avatar class="ava">{{message.getUserInitial()}}</div>
+            <mat-card-title>{{message.from}}</mat-card-title>
+            <mat-card-subtitle>{{message.time}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                {{message.content}}
+            </p>
+        </mat-card-content>
+    </mat-card>
+</div>
